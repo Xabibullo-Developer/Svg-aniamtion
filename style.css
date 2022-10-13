@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#Capa_1 {
+    width: 400px;
+    margin: 10% auto;
+    display: block;
+}
+
+
+
+.face,
+.man {
+    fill-opacity: 0;
+    stroke: rgb(34, 34, 226);
+    stroke-width: 5px;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 2000;
+
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+}
+
+.face {
+    animation: man 6s infinite;
+}
+
+.man {
+    animation: man 10s infinite;
+}
+
+@keyframes man {
+    0% {
+        stroke-dashoffset: 2000;
+
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+.face:hover {
+    stroke: red;
+    transition: 0.4s;
+}
+
+.man:hover {
+    stroke: red;
+    transition: 0.4s;
+
+}
